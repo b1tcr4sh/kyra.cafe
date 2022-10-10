@@ -10,6 +10,7 @@
 
 body {
     background-color: #321337;
+    font-family: "Medium3027-NF";
 }
 
 input {
@@ -17,14 +18,12 @@ input {
     appearance: none;
     background-color: #321337;
     color: aqua;
-    font-family: "Medium3027-NF";
     font-size: larger;
 }
 
 .terminal {
     padding-top: 1%;
     padding-left: 1%;
-    font-family: "Medium3027-NF";
     color: #cd9fd6;
 }
 
