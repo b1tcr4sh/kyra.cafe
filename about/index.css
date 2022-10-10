@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Medium3027-NF";
+    src: url('./fonts/3270-Medium Nerd Font Complete Mono.ttf') format('embedded-opentype'), /* Internet Explorer */
+         url('./fonts/3270-Medium Nerd Font Complete Mono.ttf') format('woff2'),             /* Super Modern Browsers */
+         url('./fonts/3270-Medium Nerd Font Complete Mono.ttf') format('woff2'),             /* Super Modern Browsers */
+         url('./fonts/3270-Medium Nerd Font Complete Mono.ttf') format('truetype'),          /* Safari, Android, iOS */
+         url('./fonts/3270-Medium Nerd Font Complete Mono.ttf') format('woff'),              /* Pretty Modern Browsers */
+         url('./fonts/3270-Medium Nerd Font Complete Mono.ttf') format('svg');               /* Legacy iOS */
+}
+
+body {
+    background-color: #321337;
+}
+
+input {
+    border: none;
+    appearance: none;
+    background-color: #321337;
+    color: aqua;
+    font-family: "Medium3027-NF";
+    font-size: larger;
+}
+
+.terminal {
+    padding-top: 1%;
+    padding-left: 1%;
+    font-family: "Medium3027-NF";
+    color: #cd9fd6;
+}
+
+.prompt {
+    color: #c461d9;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+/* shamelessly copied from https://www.w3docs.com/snippets/css/how-to-create-a-blinking-effect-with-css3-animations.html */
+.prompt-blinking {
+    display: inline-block;
+
+    animation: blink-animation 2s steps(5, start) infinite;
+    -webkit-animation: blink-animation 2s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+@-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
